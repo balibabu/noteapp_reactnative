@@ -6,11 +6,7 @@ export default GlobalVarContext;
 
 export const GlobalVarProvider = ({ children }) => {
     const [alert, setAlert] = useState(null);
-    const [notes, setNotes] = useState([
-		{ id: 1, title: "example", desctiption: "description", color: "red", created_time: "2023/12/0" },
-		{ id: 2, title: "example", desctiption: "description", color: "green", created_time: "2023/12/1" },
-		{ id: 3, title: "example", desctiption: "description", color: "blue", created_time: "2023/12/1" },
-	]);
+    const [notes, setNotes] = useState([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
